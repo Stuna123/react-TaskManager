@@ -59,20 +59,19 @@ __UI & UX__
 ------
 
 ## Structure du projet
-src/
-│
-├── components/
-│   ├── Header.js
-│   ├── AddTask.js
-│   └── ShowTask.js
-│
-├── assets/
-│   └── default.png
-│
-├── App.js
-├── index.js
-├── App.css
-└── index.css
+__src/__ 
+__assets/__
+- default.png
+
+__components/__
+- Header.js 
+- AddTask.js 
+- ShowTask.js
+
+App.js
+index.js
+App.css
+index.css
 
 ------
 
