@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# TaskMate - Task Management App (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+TaskMate est une application de gestion de tâches développée avec React.js qui est mon premier projet en React.
 
-In the project directory, you can run:
+Elle permet d’ajouter, modifier, supprimer et organiser des tâches avec une interface simple, rapide et responsive.
 
-### `npm start`
+Ce projet a été conçu dans un but pédagogique afin de maîtriser :
+-   React (state, props)
+-   CRUD 
+-   Logique
+-   UI Responsive
+-   Bonnes pratiques frontend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+------
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Fonctionnalités
 
-### `npm test`
+__CRUD complet__
+- Ajouter une tâche
+- Modifier une tâche
+- Supprimer une tâche
+- Bouton "Clear All" pour supprimer toutes les tâches
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+__Sauvegarde locale__
+- Les tâches sont stockées dans le localStorage
+- Les données persistent après rafraîchissement
 
-### `npm run build`
+__Recherche__
+- Filtrage dynamique des tâches via un champ de recherche
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+__Drag & Drop__
+- Réorganisation des tâches par glisser-déposer
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+__Tri__
+- Try dynamique par ordre croissant
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+__UI & UX__
+- Interface claire et moderne
+- Responsive (mobile, tablette, desktop)
+- Boutons interactifs
+- Feedback utilisateur (confirmations, interactions)
 
-### `npm run eject`
+------
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Concepts utilisés
+- `useState`
+- Props (parent > enfant)
+- Gestion des événements
+- Controlled inputs
+- Condition rendering
+- `map()`, `filter()`, `sort()`
+- LocalStorage
+- Drag & Drop natif
+- Gestion des formulaires
+- Architecture en composants
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+------
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Structure du projet
+src/
+│
+├── components/
+│   ├── Header.js
+│   ├── AddTask.js
+│   └── ShowTask.js
+│
+├── assets/
+│   └── default.png
+│
+├── App.js
+├── index.js
+├── App.css
+└── index.css
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+------
 
-## Learn More
+## Fonctionnement général
+1.  L'utilisateur ajoute une tâche
+2.  La tâche est stockée dans un state global
+3.  Les données sont sauvegardées dans le localStorage
+4.  L'utilisteur peut :
+    -   Modifier une tâche
+    -   Supprimer une tâche
+    -   Supprimer toutes les tâches
+    -   Tri dynamiquement les tâches
+5.  L'interface s'adapte automatiquement aux petits écrans 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+------
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Responsive
+- Compatible mobile (jusqu'à 240px)
+- Interface fluide
+- Composants adaptatifs
+- Expérience optimisée pour smartphone
 
-### Code Splitting
+------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Technologies utilisées
+- React JS
+- JavaScript (ES6+)
+- HTML5 / CSS3
+- Bootstrap Icons
+- LocalStorage
 
-### Analyzing the Bundle Size
+------
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Objectif du projet
+- Comprendre le fonctionnement réel d'un CRUD React
+- Apprendre à structurer une application proprement
+- Travailler la logique plutôt que les librairies
