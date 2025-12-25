@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 .gitignore
-.readME_app.md
+readME_app.md
 
 # testing
 /coverage
