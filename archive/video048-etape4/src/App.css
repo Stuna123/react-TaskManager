@@ -54,7 +54,6 @@ header .themeSelector .activeTheme {
 
 .addTask form {
     display: flex;
-    flex-direction: column;
     gap: 7px;
 }
 
@@ -67,11 +66,10 @@ header .themeSelector .activeTheme {
 }
 
 .addTask form input:focus {
-    outline: 1px solid #1fa44c;
+    outline: .5px solid #cecccc;
 }
 
 .addTask form button {
-    width: 100%;
     background-color: #03ba5c;
     color: #fff;
     border: none;
@@ -92,21 +90,6 @@ header .themeSelector .activeTheme {
     background-color: #fff;
     margin: 20px auto;
     box-shadow: var(--box-shadow);
-}
-
-.showTask input {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding: 5px 5px;
-    border: 2px solid #eaeaea;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-.showTask input:focus {
-    outline: 1px solid #1fa44c;
 }
 
 /* bar de separation */
@@ -191,10 +174,6 @@ header .themeSelector .activeTheme {
     padding-bottom: 5px;
 }
 
-.showTask i {
-    font-size: 200px;
-}
-
 .showTask i.bi-pencil-square {
     font-size: 18px;
     color: #1363DF;
@@ -209,96 +188,7 @@ header .themeSelector .activeTheme {
 
 /*responsive*/
 @media only screen and (max-width: 800px) {
-    header {
-        padding: 10px;
-    }
-
-    header .logo {
-        justify-content: space-between;
-    }
-
-    header .logo img {
-        margin: 0;
-        max-width: 30px;
-    }
-
-    .showTask li{
+  .showTask li{
     width: 100%;
   }
-}
-
-@media (max-width: 350px) {
-    header {
-        padding: 10px;
-    }
-
-    header .logo {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header .logo img {
-        margin: 0;
-        max-width: 30px;
-    }
-
-    .showTask li {
-        font-size: 12px;
-    }
-
-    .addTask input {
-        font-size: 12px;
-    }
-
-    .addTask button {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 280px) {
-
-    header {
-        padding: 10px;
-    }
-
-    header .logo {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header .logo img {
-        margin: 0;
-        max-width: 30px;
-    }
-
-    .addTask {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .addTask form {
-        flex-direction: column;
-    }
-
-    .addTask button {
-        width: 100%;
-    }
-
-    .showTask ul {
-        padding: 0;
-    }
-
-    .showTask li {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .showTask .head {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    select {
-        width: 100%;
-    }
 }

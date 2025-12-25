@@ -1,0 +1,69 @@
+Explication de Shubham pour comprendre le fonction 
+
+
+00:04:40
+understand how things started. I'm not going to go to basics. I'm going to start from this task, and setTask. So what we did here is, inside our App.js we created our individual task object, or I should say state, task and setTask. By
+
+
+00:05:00
+default, it's empty. So whatever individual state we are going to select, we are going to store its information. Now why we need to store information? So we can play with multiple component. So here in our show, if I click on any element, suppose I click on any edit, this is the edit option. So
+
+
+00:05:20
+
+we are going to get handleEdit, and we are going to pass that particular id, which is unique to each individual task. We call this element, we select that task object, and we pass that object to our setTask. That means now we have this information stored in our
+
+
+00:05:40
+
+state. The other thing is, we have stored that information, so now since we have information about task now, our value will be filled automatically, because now we actually did setTask, so that means we have that information. So our task.name is something. Because we stored it here, the object is here now. So we have task
+
+
+00:06:03
+
+.name, which is great. That means we have the value for our input field. Now, since we have handleSubmit here, so that means if I do any type of change, it will be stored first inside my object itself with my setTask. So if
+
+
+00:06:20
+
+I'm writing anything, so suppose here I have task 1, and task 2, if I click on Edit, I get, and I reach here, this stage, task.name. Now, if I tried to type anything, let's say, updated, so with my each small change, I am
+
+
+00:06:42
+
+calling onChange, and I am updating this individual task, the name or the task title, whatever I'm trying to edit, I am storing that information with each edit. So that means the state task is updated now. And once I click on
+
+
+00:07:01
+
+handleSubmit, all I have to do is I have to get here. Now if we have task.id, that means we are editing something. Remember, setTask, this holds task.id, task.name and time.
+
+
+00:07:20
+
+If we don't have task.id, that means we are in an empty state, and we are adding a new task, so we get inside this. Because after every step we are emptying it, we are basically saying it's an empty object. Remember, when we try to
+
+
+00:07:40
+
+add a new task, our id is empty. But when we edit any task, our id is filled. At the time of adding a new task, we still have, if I refresh at the time of adding some task, we still have task state, why because we are creating task state with name, but we don't have id. So
+
+
+00:08:04
+
+id is unique when we edit it. So this is the edit state, and this is the add state. Now at the time of editing, we are doing some simple tasks. That is we need a new Date, so we are accessing that Date. And
+
+
+00:08:20
+
+what we are trying to do is, we are going to map each individual element. So what we are doing, we are basically creating an updatedTasklist, we visit the first element, try to have the id with the first element and the individual element that we have stored in our state. We match the
+
+
+00:08:40
+
+id, if the id is matched, yes, we update the name and update the time. Otherwise, if this doesn't match, we have the previous info only. That's it. Once that is done, we have a updatedTasklist. Make sure you understand about map, because it's important here. So we
+
+
+00:09:02
+
+have updatedTasklist, we update the tasklist, and we set the task. Now here we can do other stuff as well. Like we can update the individual task as well. But I think map worked well here.

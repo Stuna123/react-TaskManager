@@ -1,0 +1,5 @@
+Nous allons ajouter notre localStorage.
+
+Comme nous avons fais la modification sur un seul fichier, 
+    Ce n'est pas la peine de mettre tous les autres !
+

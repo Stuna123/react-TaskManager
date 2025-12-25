@@ -11,8 +11,6 @@ function App() {
 
   const [tasklist, setTasklist] = useState(JSON.parse(localStorage.getItem("tasklist")) || []);
   const [task, setTask] = useState([]);
-  const [search, setSearch] = useState("");
-  const [sortType, setSortType] = useState("newest");
 
   useEffect(() => {
     localStorage.setItem("tasklist", JSON.stringify(tasklist))
@@ -21,29 +19,15 @@ function App() {
   return (
     <div className="App">
       <Header />
-
       <AddTask 
-        tasklist={tasklist} 
-        setTasklist={setTasklist} 
-        
-        task={task} 
-        setTask={setTask}
-      />
+        tasklist= {tasklist} setTasklist= {setTasklist} 
+        task= {task} setTask= {setTask}
+        />
 
       <ShowTask 
-        tasklist={tasklist} 
-        setTasklist={setTasklist} 
-        
-        task={task} 
-        setTask={setTask}
-        
-        search={search}
-        setSearch={setSearch}
-
-        sortType={sortType}
-        setSortType={setSortType}
-      />
-
+        tasklist= {tasklist} setTasklist= {setTasklist} 
+        task= {task} setTask= {setTask}
+        />
     </div>
   );
 }

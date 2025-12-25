@@ -1,0 +1,3 @@
+Dans cette étape, nous allons juste ajouter une condition pour changer l'état du bouton.
+
+Si on clic pour modifier l'élément, il devient update sinon rien ne se passe !
